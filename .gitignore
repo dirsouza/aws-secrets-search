@@ -4,6 +4,7 @@
 # Binários
 aws-secrets-search
 *.exe
+build/
 
 # Logs
 *.log
