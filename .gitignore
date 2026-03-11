@@ -1,0 +1,9 @@
+# Arquivo de credenciais - NUNCA commitar
+.env
+
+# Binários
+aws-secrets-search
+*.exe
+
+# Logs
+*.log
