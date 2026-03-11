@@ -66,15 +66,16 @@ make build
 ### Compilar para múltiplas plataformas
 
 ```bash
-# Compilar para Linux, Windows e macOS
+# Compilar para todas as plataformas (Linux, Windows, macOS - 6 binários)
 make build-all
 
-# Ou compilar para plataforma específica:
-make build-linux    # Linux (amd64)
-make build-windows  # Windows (amd64)
-make build-macos    # macOS (Intel e Apple Silicon)
+# Ou compilar para plataforma específica com arquitetura personalizada:
+make build-linux ARCH=arm64     # Linux ARM64
+make build-windows ARCH=arm64   # Windows ARM64
+make build-macos ARCH=arm64     # macOS Apple Silicon
 
 # Os binários ficam em ./build/
+# Arquiteturas suportadas: amd64 (padrão), arm64, 386, arm
 ```
 
 ### Limpar binários
