@@ -56,11 +56,25 @@ SEARCH_TERMS=termo1,termo2,termo3
 make run
 ```
 
-### Compilar e executar
+### Compilar para o sistema atual
 
 ```bash
 make build
 ./aws-secrets-search
+```
+
+### Compilar para múltiplas plataformas
+
+```bash
+# Compilar para Linux, Windows e macOS
+make build-all
+
+# Ou compilar para plataforma específica:
+make build-linux    # Linux (amd64)
+make build-windows  # Windows (amd64)
+make build-macos    # macOS (Intel e Apple Silicon)
+
+# Os binários ficam em ./build/
 ```
 
 ### Limpar binários
